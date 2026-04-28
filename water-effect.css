@@ -1,0 +1,24 @@
+/*
+ * Water Effect Plugin — CSS de apoyo
+ * Asegura que el contenedor sea relativo para que el canvas WebGL
+ * se posicione correctamente dentro del elemento.
+ */
+
+.water-effect {
+    overflow: hidden;
+}
+
+.jquery-ripples {
+    position: relative;
+    z-index: 0;
+}
+
+.jquery-ripples canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+}
